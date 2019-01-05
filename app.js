@@ -63,6 +63,7 @@ function request(streamer) {
   } else {
     hide("container")
     show("nothing")
+    hide('loading')
     document.getElementById("info").innerHTML = 'You should submit a streamer username'
   }
 }
