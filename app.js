@@ -58,7 +58,6 @@ function request(streamer) {
       }
     }
     xhr.send();
-    document.getElementById("username").innerHTML = streamer.username|| ''
     hide('loading')
   } else {
     hide("container")
