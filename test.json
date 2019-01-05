@@ -1,0 +1,62 @@
+{
+  "stream": {
+    "_id": 32013301872,
+    "game": "Counter-Strike: Global Offensive",
+    "viewers": 40,
+    "video_height": 720,
+    "average_fps": 60,
+    "delay": 0,
+    "created_at": "2019-01-04T21:53:04Z",
+    "is_playlist": false,
+    "stream_type": "live",
+    "preview": {
+      "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lalita_tv-80x45.jpg",
+      "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lalita_tv-320x180.jpg",
+      "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lalita_tv-640x360.jpg",
+      "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lalita_tv-{width}x{height}.jpg"
+    },
+    "channel": {
+      "mature": true,
+      "partner": true,
+      "status": "RETOUR DE VACANCES !! \u003c3  SMURF",
+      "broadcaster_language": "fr",
+      "broadcaster_software": "",
+      "display_name": "Lalita_Tv",
+      "game": "Counter-Strike: Global Offensive",
+      "language": "fr",
+      "_id": 106366470,
+      "name": "lalita_tv",
+      "created_at": "2015-11-07T08:55:07Z",
+      "updated_at": "2019-01-04T22:50:14Z",
+      "delay": null,
+      "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/34a7379db3c03d2c-profile_image-300x300.jpeg",
+      "banner": null,
+      "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/lalita_tv-channel_offline_image-3e56642ddddeb24c-1920x1080.png",
+      "background": null,
+      "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/lalita_tv-profile_banner-9c7043b36389a0e6-480.png",
+      "profile_banner_background_color": "",
+      "url": "https://www.twitch.tv/lalita_tv",
+      "views": 583436,
+      "followers": 18772,
+      "_links": {
+        "self": "https://api.twitch.tv/kraken/channels/lalita_tv",
+        "follows": "https://api.twitch.tv/kraken/channels/lalita_tv/follows",
+        "commercial": "https://api.twitch.tv/kraken/channels/lalita_tv/commercial",
+        "stream_key": "https://api.twitch.tv/kraken/channels/lalita_tv/stream_key",
+        "chat": "https://api.twitch.tv/kraken/chat/lalita_tv",
+        "features": "https://api.twitch.tv/kraken/channels/lalita_tv/features",
+        "subscriptions": "https://api.twitch.tv/kraken/channels/lalita_tv/subscriptions",
+        "editors": "https://api.twitch.tv/kraken/channels/lalita_tv/editors",
+        "teams": "https://api.twitch.tv/kraken/channels/lalita_tv/teams",
+        "videos": "https://api.twitch.tv/kraken/channels/lalita_tv/videos"
+      }
+    },
+    "_links": {
+      "self": "https://api.twitch.tv/kraken/streams/lalita_tv"
+    }
+  },
+  "_links": {
+    "self": "https://api.twitch.tv/kraken/streams/lalita_tv",
+    "channel": "https://api.twitch.tv/kraken/channels/lalita_tv"
+  }
+}

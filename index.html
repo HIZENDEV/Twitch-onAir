@@ -1,9 +1,30 @@
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 <style media="screen">
+  html{
+    background: #fff;
+    margin: 0;
+    border: none;
+    width: 350px;
+    height: 197px;
+  }
   body{
     background: #fff;
     margin: 0;
     border: none;
+    width: 350px;
+    height: 197px;
+  }
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  p {
+    margin: 0
+  }
+  .hidden {
+    display: none;
+  }
+  .visible {
+    display: block;
   }
   .header{
     background: #423070;
@@ -13,32 +34,195 @@
     padding: 0 1em;
     color: #fff;
   }
+  .header div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+  }
+  .header span{
+    margin-left: 10px;
+    background: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
   .logo-twitch{
     width: 22px;
     height: 22px;
-    objectif-fit: contain;
+    object-fit: contain;
   }
-  .container{
-    margin: 0;
+  #loading {
+    position: absolute;
+    top: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 350px;
-    height: 500px;
+    height: 394px;
     font-family: 'Varela Round', sans-serif;
     color: #423070;
     text-align: center;
+    background: white;
+    cursor: progress;
+  }
+  #loading img {
+    width: 350px;
+    height: 394px;
+    object-fit: contain;
+  }
+  #container{
+    margin: 0;
+    width: 350px;
+    height: 197px;
+    /* padding-top: .35em; */
+    font-family: 'Varela Round', sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+  }
+  #nothing{
+    margin: 0;
+    width: 350px;
+    height: 197px;
+    /* padding-top: .35em; */
+    font-family: 'Varela Round', sans-serif;
+    color: #423070;
+    text-align: center;
+    background: #fff;
+  }
+  #nothing .centered_self{
+    width: 350px;
+    height: 197px;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    display: flex;
+  }
+      
+  .content{
+    padding-left: 10px;
+    margin-top: -50px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .right{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
   }
   .title{
     text-transform: uppercase;
     font-size: 1.2em;
   }
+  #title {
+     display: inline-block;
+      max-width: 80%;
+      height: 1.5em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; 
+  }
+  #userImage {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    padding-right: 10px;
+  }
+
+  #preview {
+    width: 350px;
+    height: 197px;
+    object-fit: cover;
+    opacity: 1;
+  }
+  #game {
+    opacity: .7;
+    font-size: .8em;
+    display: inline-block;
+  }
+  #title {
+    opacity: 1;
+    font-size: .9em;
+  }
+
+  .footer {
+    background: red;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: 1
+  }
+
+  .footer input {
+    width: 80%;
+    padding: .5em 1em;
+    border: none;
+    color: #6c6b6d;
+    font-size: .9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .footer button {
+    width: 20%;
+    border: none;
+    background: #fff;
+    color: #423070;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 300ms;
+  }
+  .footer button:hover {
+    cursor: pointer;
+    font-weight: normal;
+    background: #423070;
+    color: #fff;
+  }
+
 </style>
 <div class="header">
-  <h1 class="title">Twitch OnAir</h1>
+  <div>
+    <h1 class="title">Twitch OnAir</h1>
+    <span></span>
+  </div>
   <img src="img/twitch.svg" class="logo-twitch">
 </div>
-<div class="container">
-  <h1 id="username">username</h1>
+
+<div id="container">
+  <img src="" id="preview">
+  <div class="content">
+    <div class="left">
+      <img src="" id="userImage">
+      <p id="displayName"></p>
+    </div>
+    <div class="right">
+      <i id="game"></i>
+      <p id="title"></p>
+    </div>
+  </div>
+</div>
+<div id="nothing">
+  <div class="centered_self">
+    <h3 class="info" id="info"></h3>
+  </div>
+</div>
+<div id="loading">
+  <img src="img/loader.gif">
+</div>
+<div class="footer">
   <input type="text" id="usernameInput" placeholder="streamer username">
   <button type="button" id="submit" name="button">Submit</button>
 </div>
-<p class="info" id="info"></p>
 <script src="app.js" onclick="registerStreamer()" charset="utf-8"></script>
