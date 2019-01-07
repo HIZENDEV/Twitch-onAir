@@ -1,0 +1,62 @@
+{
+  "stream": {
+    "_id": "integer",
+    "game": "string",
+    "viewers": "integer",
+    "video_height": "integer",
+    "average_fps": "integer",
+    "delay": "integer",
+    "created_at": "string",
+    "is_playlist": "boolean",
+    "stream_type": "string",
+    "preview": {
+      "small": "string",
+      "medium": "string",
+      "large": "string",
+      "template": "string"
+    },
+    "channel": {
+      "mature": "boolean",
+      "partner": "boolean",
+      "status": "string",
+      "broadcaster_language": "string",
+      "broadcaster_software": "string",
+      "display_name": "string",
+      "game": "string",
+      "language": "string",
+      "_id": "integer",
+      "name": "string",
+      "created_at": "string",
+      "updated_at": "string",
+      "delay": "string",
+      "logo": "string",
+      "banner": "string",
+      "video_banner": "string",
+      "background": "string",
+      "profile_banner": "string",
+      "profile_banner_background_color": "string",
+      "url": "string",
+      "views": "integer",
+      "followers": "integer",
+      "_links": {
+        "self": "string",
+        "follows": "string",
+        "commercial": "string",
+        "stream_key": "string",
+        "chat": "string",
+        "features": "string",
+        "subscriptions": "string",
+        "editors": "string",
+        "teams": "string",
+        "videos": "string"
+      }
+    },
+    "_links": {
+      "self": "string"
+    }
+  },
+  "_links": {
+    "self": "string",
+    "channel": "string"
+  }
+}
